@@ -8,7 +8,7 @@
 
 ## Live Demo
 
-* You can check out the live demo of the project [here]()
+* You can check out the live demo of the project [here](https://premkrrajbhar.github.io/MyShop/)
 
 ## Table of Contents
 
