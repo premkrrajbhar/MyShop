@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - MyShop</title>
+    <link rel="stylesheet" href="../css/checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header Section Start -->
+
+    <header>
+        <div class="logo">
+            <a href="../index.html">MyShop</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#shop-product">Products</a></li>
+                <li><a href="./cart.html">Cart</a></li>
+                <li><a href="./checkout.html" id="active">Checkout</a></li>
+                <li><a href="./contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Header Section End -->
+
+
+    <!-- Checkout Section Start -->
+
+    <section class="checkout">
+        <h2>Checkout</h2>
+        <div class="checkout-container">
+            <div class="customer-info">
+                <h3>Customer Information</h3>
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="tel" placeholder="Phone Number" required>
+            </div>
+
+            <div class="shipping-info">
+                <h3>Shipping Address</h3>
+                <input type="text" placeholder="Address Line 1" required>
+                <input type="text" placeholder="Address Line 2">
+                <input type="text" placeholder="City" required>
+                <input type="text" placeholder="State" required>
+                <input type="text" placeholder="Postal Code" required>
+            </div>
+
+            <div class="payment-info">
+                <h3>Payment Method</h3>
+                <select required>
+                    <option value="" disabled selected>Select Payment Method</option>
+                    <option value="credit-card">Credit Card</option>
+                    <option value="debit-card">Debit Card</option>
+                    <option value="paypal">PayPal</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="cart-summary">
+            <h3>Your Order</h3>
+            <div class="summary-details">
+                <div class="summary-item">
+                    <span>Baby-Girl's Knee-Length Dress</span>
+                    <span class="price">₹750</span>
+                </div>
+                <div class="summary-item">
+                    <span>Girl's Dress</span>
+                    <span class="price">₹899</span>
+                </div>
+                <div class="summary-item">
+                    <span>Fashionable Jacket</span>
+                    <span class="price">₹899</span>
+                </div>
+                <div class="summary-item">
+                    <span>Ikigai</span>
+                    <span class="price">₹105</span>
+                </div>
+                <div class="summary-item total">
+                    <span>Total:</span>
+                    <span class="total-price">₹2,653</span>
+                </div>
+            </div>
+            <button class="place-order">Place Order</button>
+        </div>
+    </section>
+
+    <!-- Checkout Section End -->
+
+
+    <!-- Footer Section Start -->
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: support@myshopclone.com</a></p>
+                <p>Phone: +91 9XXXXXXXXX</p>
+                <p>Address: 123 Main St, Delhi, India</p>
+            </div>
+
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 MyShop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Footer Section Start -->
+
+</body>
+
+</html>

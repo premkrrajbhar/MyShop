@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/*------------ Header Styling Start ------------*/
+
+header {
+    background-color: #227BFF;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+header .logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 5px 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+}
+
+#active,
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/*------------ Header Styling End ------------*/
+
+
+/*------------ Contact Us Styling Start ------------*/
+
+.contact {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-form,
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.contact-form h3,
+.contact-info h3 {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #227BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #1a5bb8;
+}
+
+.map {
+    margin-top: 20px;
+}
+
+.map iframe {
+    border-radius: 8px;
+}
+
+/*------------ Contact Us Styling End ------------*/
+
+
+/*------------ Footer Section Styling Start ------------*/
+
+footer {
+    background-color: #007bff;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-contact {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-contact h3,
+p {
+    margin: 10px;
+}
+
+.footer-social {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-social h3 {
+    margin-top: 15px;
+}
+
+.footer-social ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-social ul li a i {
+    color: white;
+    margin: 15px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+
+    .cart-items {
+        flex-direction: column;
+    }
+
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cart-item img {
+        margin-bottom: 10px;
+    }
+
+    .summary-details {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .checkout {
+        width: 100%;
+    }
+}
+
+@media (max-width: 630px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*------------ Footer Section Styling End ------------*/

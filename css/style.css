@@ -1,0 +1,376 @@
+/*------------ Universal Styling Start ------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/*------------ Universal Styling End ------------*/
+
+
+/*------------ Header / Navigation Styling Start ------------*/
+
+body header {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #227BFF;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+header .logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+header .searchbar {
+    display: flex;
+    align-items: center;
+}
+
+header .searchbar input {
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+
+header .searchbar #search-icon {
+    position: relative;
+    right: 50px;
+    background: none;
+    border: none;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+header .searchbar #search-icon i {
+    color: grey;
+    font-size: 18px;
+}
+
+
+
+@media (max-width: 990px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    header nav ul li {
+        margin: 8px 0;
+    }
+
+    header .searchbar {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    header .searchbar input {
+        width: 100%;
+        margin-left: 10px;
+    }
+
+}
+
+
+/*------------ Header / Navigation Styling End ------------*/
+
+
+/*------------ Hero Section Styling Start ------------*/
+
+.hero {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/HomePage/HeroImage/heroimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.hero .hero-content {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero .hero-content h1 {
+    font-size: 3rem;
+}
+
+.hero .hero-content p {
+    font-size: 1.2rem;
+}
+
+.hero .hero-content .btn {
+    text-decoration: none;
+    margin: 20px 0 0;
+    padding: 7px;
+    display: inline-block;
+    color: black;
+    background-color: pink;
+    font-weight: bold;
+    border-radius: 40px;
+}
+
+@media (max-width: 900px) {
+    .hero .hero-content {
+        margin: 40px;
+    }
+}
+
+/*------------ Hero Section Styling End ------------*/
+
+/*------------ Product Section Styling Start ------------*/
+
+.product {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.product h2 {
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+.product-item img {
+    max-width: 100%;
+    min-height: 300px;
+    border-radius: 8px;
+}
+
+.btn {
+    padding: 7px;
+    border-radius: 40px;
+    background-color: pink;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: rgb(245, 130, 150);
+}
+
+.price {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/*------------ Product Section Styling End ------------*/
+
+
+/*------------ Testimonials Section Styling Start ------------*/
+
+.testimonials {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    margin-bottom: 20px;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.testimonial-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.testimonial-item:hover {
+    transform: scale(1.05);
+}
+
+.testimonial-item img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+/*------------ Testimonials Section Styling End ------------*/
+
+
+/*------------ Why Choose Us Section Styling Start ------------*/
+
+.why-choose-us {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.why-choose-us h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.benefit-item {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    transition: transform 0.3s;
+}
+
+.benefit-item:hover {
+    transform: scale(1.05);
+}
+
+.benefit-item i {
+    font-size: 2em;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.benefit-item h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.benefit-item p {
+    font-size: 0.95em;
+    color: #666;
+}
+
+
+/*------------ Why Choose Us Section Styling End ------------*/
+
+
+/*------------ Footer Section Styling Start ------------*/
+
+footer {
+    background-color: #007bff;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.footer-contact {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-contact h3, p {
+    margin: 10px;
+}
+
+.footer-social {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-social h3 {
+    margin-top: 15px;
+}
+
+.footer-social ul li a i {
+    color: white;
+    margin: 10px;
+}
+
+.footer-social ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-social ul li {
+    margin: 0 10px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+/*------------ Footer Section Styling End ------------*/
